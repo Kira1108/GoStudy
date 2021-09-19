@@ -35,11 +35,11 @@ func deal(d deck, n int) (deck, deck) {
 	return d[:n], d[n:]
 }
 
-func (d deck) saveToFile() {
+func (d deck) saveToFile(fname string) {
 	deckStringSlice := []string(d)
 	deckString := strings.Join(deckStringSlice, "\n")
 	deckByte := []byte(deckString)
-	ioutil.WriteFile("cards.txt", deckByte, 0666)
+	ioutil.WriteFile(fname, deckByte, 0666)
 }
 
 func readDeckFromFile(fname string) deck {
