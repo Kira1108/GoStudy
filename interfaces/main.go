@@ -7,6 +7,13 @@ type Bot interface {
 	getGreeting() string
 }
 
+type SomeType interface {
+	somefunc1(string, int) (string error) // take in string and int, return string and error
+	somefunc2()                           // take in nothing, return nothing
+	somefunc3() string                    // take in nothing return string
+	// somefunc(type1, type2) no actual variable name inside this function declaration
+}
+
 // a type englishBot
 type englishBot struct {
 }
