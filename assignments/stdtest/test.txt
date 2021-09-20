@@ -1,0 +1,6 @@
+This is a sample file
+I wrote this file to test my program
+Now I add another line
+And one more
+That seems enough for me
+ok, lastline, done.
